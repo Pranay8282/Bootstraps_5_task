@@ -47,6 +47,18 @@ h3 {
     color: #555;
   }
 
+
+  .carousal-indicators button{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color:#e9ecef;
+  border: none;
+}
+
+.carousal-indicators .active{
+  background-color: #4CAf50;
+}
   
   .list-group {
     display: flex;
@@ -81,6 +93,9 @@ h3 {
   .Hi:hover {
     transform: scale(1.07);
   }
+
+
+  
 
   .card {
     border: none; 
@@ -135,7 +150,7 @@ margin: auto;
   .our-story-content ul {
     list-style: none;
     padding: 0;
-  }
+  } 
   .our-story-content ul li {
     margin-bottom: 10px;
   }
@@ -154,15 +169,25 @@ margin-bottom: 225px;
     width: 100%;
   }
 
-  @media screen and (max-width:986px){
-    .Ourstory{
-      display: none;
-    }
-
-    .ourMain  {
-      width:100%;
-    }
+  @media (max-width: 991.98px) {
+  /* Hide Image on Smaller Screens */
+  .our-story-section .col-md-6:last-child {
+    display: none; /* Hides the image */
   }
+
+  /* Center Align Text Content */
+  .our-story-section .col-md-6.ourMain {
+    text-align: center;
+    margin: 0 auto; /* Centers the content */
+  }
+
+  /* Adjust Spacing */
+  .our-story-content {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+  }
+}
 
 
   @media screen and (max-width:545) {
@@ -182,10 +207,12 @@ margin-bottom: 225px;
 
   .carousel-inner {
   height: auto; /* Adjust the height based on your preference */
+  padding-bottom: 100px;
 }
 
   .carousel-image {
   object-fit: cover;
+  position:relative;
   height: 100%; 
 }
 
@@ -408,7 +435,7 @@ background-color: #2E7D32; /* Darker green for the active state */
   <div class="container py-5 ">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <!-- Card 1 -->
-      <div class="col">
+      <div class="col Hi">
         <div class="card shadow-sm h-100">
           <div class="mx-auto mt-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="skyblue" class="bi bi-activity" viewBox="0 0 16 16">
@@ -423,7 +450,7 @@ background-color: #2E7D32; /* Darker green for the active state */
       </div>
   
       <!-- Card 2 -->
-      <div class="col">
+      <div class="col Hi">
         <div class="card shadow-sm h-100">
           <div class="mx-auto mt-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="orange" class="bi bi-broadcast" viewBox="0 0 16 16">
@@ -579,42 +606,42 @@ background-color: #2E7D32; /* Darker green for the active state */
   <!-- Client Images -->
   <div class="row g-4">
     <div class="col-6 col-sm-4 col-md-3">
-      <div class="client-item">
+      <div class="client-item Hi">
         <img src="image/client-1.png" alt="Client 1" class="img-fluid">
       </div>
     </div>
     <div class="col-6 col-sm-4 col-md-3">
-      <div class="client-item">
+      <div class="client-item Hi">
         <img src="image/client-2.png" alt="Client 2" class="img-fluid">
       </div>
     </div>
     <div class="col-6 col-sm-4 col-md-3">
-      <div class="client-item">
+      <div class="client-item Hi">
         <img src="image/client-3.png" alt="Client 3" class="img-fluid">
       </div>
     </div>
     <div class="col-6 col-sm-4 col-md-3">
-      <div class="client-item">
+      <div class="client-item Hi">
         <img src="image/client-4.png" alt="Client 4" class="img-fluid">
       </div>
     </div>
     <div class="col-6 col-sm-4 col-md-3">
-      <div class="client-item">
+      <div class="client-item Hi">
         <img src="image/client-5.png" alt="Client 5" class="img-fluid">
       </div>
     </div>
     <div class="col-6 col-sm-4 col-md-3">
-      <div class="client-item">
+      <div class="client-item Hi">
         <img src="image/client-6.png" alt="Client 6" class="img-fluid">
       </div>
     </div>
     <div class="col-6 col-sm-4 col-md-3">
-      <div class="client-item justify-content-center">
+      <div class="client-item justify-content-center Hi">
         <img src="image/client-7.png" alt="Client 7" class="img-fluid">
       </div>
     </div>
     <div class="col-6 col-sm-4 col-md-3">
-      <div class="client-item">
+      <div class="client-item Hi" >
         <img src="image/client-8.png" alt="Client 8" class="img-fluid">
       </div>
     </div>
@@ -629,7 +656,7 @@ background-color: #2E7D32; /* Darker green for the active state */
       <div class="container">
         <div class="row">
               <div class="col">
-                <H3 class="mb-5">COMPNAY</H3>
+                <H3 class="mb-5 Hi">COMPNAY</H3>
                 <p>A108 Adam street <br>NewYork,NY 535022</p>
                 <p><span style="font-weight: bold;">Phone:</span>+1 5589 55488 55</p>
                 <p><span style="font-weight: bold;">Email:</span>info@example.com</p>
