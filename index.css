@@ -1,323 +1,289 @@
-/* About Section */
-#about {
-    background-color: darkgrey;
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    margin-left: 9;
-    margin-right: auto;
-    padding-left: -23;
-    z-index: 4;
-}
-
-  /* Carousel Section */
-#slider {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.carousel-inner {
-  height: 500px; /* Adjust the height based on your preference */
-}
-
-.carousel-image {
-  object-fit: cover;
-  height: 100%; 
-}
-
-.carousel-caption {
-  text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.carousel-caption h5 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.carousel-caption p {
-  font-size: 1rem;
-  color: #ddd;
-}
-
-/* Carousel Indicators */
-.carousel-indicators button {
-
-  border-radius: 50%;
-  background-color: #4CAF50;
-  border: none; 
-  transition: transform 0.3s ease; 
-}
-
-.carousel-indicators button:hover {
-  transform: scale(1.2); /* Slightly enlarges the indicator on hover */
-}
-
-.carousel-indicators .active {
-  background-color: #2E7D32; /* Darker green for the active state */
-}
-
-/* Ensure Navbar Dropdown Menu Stays Above */
-.navbar {
-  z-index: 1050; /* Higher than the carousel's z-index */
-}
-
-.dropdown-menu {
-  z-index: 2000; /* Ensure dropdown appears above carousel */
-}
-
-/* Carousel Content Adjustments */
-.carousel {
-  position: relative;
-  z-index: 1; /* Lower than the navbar */
-}
-
-
-
-
-
-h3 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-
-  
-  .list-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
-  }
-
-  .list-group .list-group-item {
-    border: 10px;
-    padding: 0;
-    background-color: transparent;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  }
-
- 
-
-  .client-img {
-    max-width: 120px;
-    height: auto;
-    border-radius: 8px; 
-    transition: transform 0.3s ease; 
-  }
-  .Hi{
-
-    height: auto;
-    transition: transform 0.3s ease; 
-  }
-
-  .client-img:hover {
-    transform: scale(1.1);
-  }
-  .Hi:hover {
-    transform: scale(1.07);
-  }
-
-  .card {
-    border: none; 
-  }
-
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-
- 
-  .card-body {
-    background-color:none; 
-    padding: 1.5rem;
-  }
-
-  .container1 {
-    background-color: #e9ecef;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .col {
-    padding: 10px;
-  }
-
-  
-
-  .tbs{
-padding: auto;
-margin: auto;
-  }
-
-  .custom-image{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  /* Our Story Section */
-.our-story-section {
-  padding: 50px 20px;
-}
-
-.our-story-content {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.our-story-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.our-story-content ul li {
-  margin-bottom: 10px;
-}
-
-.our-story-content ul li::before {
-  content: '\2713';
-  color: green;
-  margin-right: 10px;
-}
-
-.watch-video-link {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.watch-video-link:hover {
-  text-decoration: underline;
-  color: green;
-}
-
-img.Ourstory {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .our-story-section {
-    text-align: center;
-  }
-
-  .our-story-content {
-    margin-bottom: 20px;
-  }
-}
-
-
-  .portfolio{
-    text-align: center;
-  }
-
-  .pagination .page-item .page-link.active{
-      background-color: #4CAf50;
-      color: white;
-  }
-
-  .pagination .page-item .page-link{
-    border: none;
-    padding-left: auto;
-    border-radius: 50%;
-    margin-right: 10;
-    padding: 1px;
-    color: black;
-  }
-
-  .navbar-nav .nav-item .nav-link.active{
-    color: #4CAf50;
-  }
-
-
-  .footer{
-
-    background-color:#060606;
-    color: #e9ecef;
-  }
-
-  .footer .social-links a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border-color: #555;
-  }
-.scroll-to-top{
-    position:fixed;
-    align-self: flex-end;
-    bottom: 20px;
-    right: 20px;
-    background-color: #4CAf50;
-    color: #000;
-    border: none;
-    border-radius: 25%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    /* display: none; */
-  }
-
-
-  .carousal-indicators button{
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color:#e9ecef;
-  border: none;
-}
-
-.carousal-indicators .active{
-  background-color: #4CAf50;
-}
-
-/* Clients Section Styling */
-.client-item {
-  background-color: #ffffff; /* White background for images */
-  border: 2px solid #dddddd; /* Light border around each item */
-  border-radius: 10px; /* Rounded corners */
-  padding: 10px; /* Padding around images */
-  display: flex; /* Center image */
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.client-item img {
-  width: 200px; /* Ensure images are responsive */
-  height: 00px; /* Set uniform height */
-  object-fit: contain; /* Maintain aspect ratio */
-}
-
-.client-item:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-}
-
-
-/* Responsive Adjustments */
-@media (max-width: 576px) {
-  .client-item img {
-    height: 80px; /* Smaller size for small screens */
-  }
-}
+      /* About Section */
+      #about {
+        background-color: darkgrey;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin-left: 9;
+        margin-right: auto;
+        padding-left: -23;
+        z-index: 4;
+    }
+    
+    
+    .footer .social-links a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-color: #555;
+      }
+    
+    .footer h3{
+        color: #e9ecef;
+      }
+    
+      
+        
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #e9ecef;
+      }
+    
+      p {
+        font-size: 1.2rem;
+        color: #555;
+      }
+    
+    
+    
+      
+    
+      .list-group {
+        display: flex;
+        justify-content: center;
+        gap: 20px; 
+      }
+    
+      .list-group .list-group-item {
+        border: none; 
+        padding: 0;
+        background-color: transparent;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+      }
+    
+    .carousel-indicators {
+    
+        justify-content: center; /* Centers the indicators horizontally */
+        align-items: center; /* Vertically centers them (optional, usually not needed) */
+        gap: 10px; /* Adds spacing between indicators */
+        margin-top: 20px; /* Adjusts spacing between the carousel and the indicators */
+    }
+    
+    
+    
+      .client-img {
+        max-width: 120px;
+        height: auto;
+        border-radius: 8px; 
+        transition: transform 0.3s ease; 
+      }
+      .Hi{
+    
+        height: auto;
+        transition: transform 0.3s ease; 
+      }
+    
+      .client-img:hover {
+        transform: scale(1.1);
+      }
+      .Hi:hover {
+        transform: scale(1.07);
+      }
+    
+    
+      
+    
+      .card {
+        border: none; 
+      }
+    
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+    
+     
+      .card-body {
+        background-color:none; 
+        padding: 1.5rem;
+      }
+    
+      .container1 {
+        background-color: #e9ecef;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    
+      .col {
+        padding: 10px;
+      }
+    
+      .tbs{
+    padding: auto;
+    margin: auto;
+      }
+    
+      .custom-image{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    
+      .our-story-section {
+        padding: 50px 0;
+      }
+      .our-story-content {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .our-story-content ul {
+        list-style: none;
+        padding: 0;
+      } 
+      .our-story-content ul li {
+        margin-bottom: 10px;
+      }
+      .our-story-content ul li::before {
+        content: '\2713';
+        color: green;
+        margin-right: 10px;
+      }
+      .Ourstory{
+    z-index: 2;
+    margin-left: -60px;
+    margin-bottom: 100px; 
+      }
+    
+      .ourMain{
+        width: 100%;
+      }
+    
+      @media (max-width: 991.98px) {
+      /* Hide Image on Smaller Screens */
+      .our-story-section .col-md-6:last-child {
+        display: none; /* Hides the image */
+      }
+    
+      /* Center Align Text Content */
+      .our-story-section .col-md-6.ourMain {
+        text-align: center;
+        margin: 0 auto; /* Centers the content */
+      }
+    
+      /* Adjust Spacing */
+      .our-story-content {
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+      }
+    }
+    
+    .carousel-caption{
+      background-color:black;
+      opacity: 55%;
+    }
+    
+      @media screen and (max-width:545) {
+        .carousel-inner .carousel-item .carousel-caption{
+          display: none;
+        }
+      }
+      .portfolio{
+        text-align: center;
+      }
+    
+      .section-title {
+      text-align: center;
+    }
+    
+    .center-line {
+      background-color: #4CAF50;
+      height: 3px;
+      width: 50px;
+      margin: 10px auto;
+    }
+    
+    
+      .pagination .page-item .page-link.active{
+          background-color: #4CAf50;
+          color: white;
+          
+      }
+    
+    
+    
+    
+      .carousel-image {
+      object-fit: cover;
+      position: relative;
+      height: 100%;
+    }
+    
+    .carousel-indicators {
+      position: absolute;
+      bottom: 20px; /* Adjusts the vertical placement */
+      left: 50%;    /* Centers the indicators horizontally */
+      transform: translateX(-50%);
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px; /* Spacing between indicators */
+    }
+    
+    .carousel-indicators .Brt {
+      width: 12px;              /* Circular shape */
+      height: 12px;
+      border-radius: 50%;       /* Makes it a perfect circle */
+      background-color: gray;   /* Default indicator color */
+      border: 2px solid white;  /* White border for better visibility */
+      cursor: pointer;          /* Pointer cursor on hover */
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .carousel-indicators .Brt:hover {
+      background-color: #1bbd36; /* Changes to green on hover */
+      transform: scale(1.2);     /* Enlarges slightly */
+    }
+    
+    .carousel-indicators .Brt.active {
+      background-color: #1bbd36; /* Active indicator color */
+      transform: scale(1.2);     /* Slight enlargement for active indicator */
+    }
+    
+      .pagination .page-item .page-link{
+        border: none;
+        padding-left: auto;
+        border-radius: 100;
+        margin-right: 10;
+        color: black;
+      }
+    
+      .navbar-nav .nav-item .nav-link.active{
+        color: #4CAf50;
+      }
+    
+    
+      /* .Hey{
+        margin-bottom: 40px;
+        padding: 0px;
+      } */
+    
+      
+    .scroll-to-top{
+        position:fixed;
+        align-self: flex-end;
+        bottom: 20px;
+        right: 20px;
+        background-color: #4CAf50;
+        color: #000;
+        border: none;
+        border-radius: 25%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        /* display: none; */
+      }
+    
+    
