@@ -131,7 +131,7 @@
 
 <div class="container our-story-section">
       <div class="row align-items-center">
-        <!-- Left Content -->
+
         <div class="col-md-6 ourMain">
           <h2 class="fw-bold Hi" style="padding-bottom: 120px">Consequatur eius et <br> magnam</h2>
           <div class="our-story-content mt-4 Hi">
@@ -170,7 +170,6 @@
 <div style="background-color: #f7f7f7;">
   <div class="container py-5 ">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <!-- Card 1 -->
       <div class="col Hi">
         <div class="card shadow-sm h-100">
           <div class="mx-auto mt-4">
@@ -184,8 +183,6 @@
           </div>
         </div>
       </div>
-  
-      <!-- Card 2 -->
       <div class="col Hi">
         <div class="card shadow-sm h-100">
           <div class="mx-auto mt-4">
@@ -461,16 +458,16 @@
   function scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Smooth scroll effect
+      behavior: 'smooth'
     });
   }
 
   window.onscroll = function() {
     const button = document.querySelector('.scroll-to-top');
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      button.style.display = "block";  // Show button when scrolled down
+      button.style.display = "block";  
     } else {
-      button.style.display = "none";   // Hide button when at top
+      button.style.display = "none";   
     }
   };
 </script>
