@@ -57,7 +57,7 @@
   width: 12px;
 }
 
-.carousel .carousel-inner .carousel-item .carousel-caption button:hover{
+.carousel .carousel-inner .carousel-item .carousel-caption button:hover {
   background-color: #1bbd36;
   color: #e9ecef;
 }
@@ -148,7 +148,7 @@
   }
 
   .carousel-image {
-    height: 50vh; /* Adjust the image height for small screens */
+    height: 50vh;
   }
 
   .carousel .carousel-indicators button {
@@ -239,7 +239,10 @@ p {
   height: auto;
   object-fit: cover;
 }
-
+.our-story-section h2 {
+  width: 350px;
+  padding-bottom: 120px;
+}
 .our-story-section {
   padding: 50px 0;
 }
@@ -271,88 +274,82 @@ p {
 }
 
 @media (max-width: 991px) {
-  /* Reverse the order of columns for smaller screens */
   .our-story-section .row {
     display: flex;
-    flex-direction: column-reverse; /* Ensures the image is above the text */
-    align-items: center; /* Centers all elements */
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .our-story-section .col-md-6 {
-    width: 100%; /* Ensures full width for columns */
-    margin-bottom: 20px; /* Adds spacing between sections */
-  
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .our-story-section .col-md-6 img {
-    max-width: 90%; /* Adds padding from the edges */
-    height: auto; /* Maintains aspect ratio */
-    margin: 0 auto; /* Centers the image horizontally */
-    display: block; /* Ensures proper block alignment */
-    border-radius: 10px; /* Adds slight rounding for a clean look */
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
   }
 
   .our-story-section h2 {
-    font-size: 1.8rem; /* Adjusts heading size for smaller screens */
-    margin-top: 20px; /* Adds spacing above the heading */
+    font-size: 1.8rem;
+    margin-top: 20px;
   }
 
   .our-story-content {
-    padding: 10px 20px; /* Reduces padding for a compact layout */
+    padding: 10px 20px;
   }
 
   .our-story-content ul {
-    padding-left: 0; /* Removes default list padding */
-    list-style: none; /* Hides default bullet points */
+    padding-left: 0;
+    list-style: none;
   }
 
   .our-story-content ul li {
-    margin-bottom: 10px; /* Adds spacing between list items */
-    position: relative; /* For custom bullet styling */
-    padding-left: 25px; /* Indents text to fit custom bullet */
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
     align-items: center;
   }
 
   .our-story-content ul li:before {
-    content:"\2713" ; /* Custom bullet point */
+    content: "\2713";
     position: absolute;
     left: 0;
-    color: #1bbd36; /* Matches the theme */
+    color: #1bbd36;
     font-size: 1.2rem;
   }
 
   .our-story-section .bi-play-circle {
     width: 40px;
-    height: 40px; /* Adjust play button size for smaller screens */
+    height: 40px;
   }
 
   .our-story-section a {
-    font-size: 0.9rem; /* Adjust link font size for better fit */
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 576px) {
-  /* Further optimizations for very small screens */
   .our-story-section h2 {
-    font-size: 1.5rem; /* Reduce heading size further */
+    font-size: 1.5rem;
   }
 
   .our-story-content {
-    padding: 5px 10px; /* Further reduce padding */
+    padding: 5px 10px;
   }
 
   .our-story-section .col-md-6 img {
-    max-width: 100%; /* Use full width on very small screens */
-    border-radius: 5px; /* Slightly less rounding */
+    max-width: 100%;
+    border-radius: 5px;
   }
 
   .our-story-content ul li {
-    font-size: 0.85rem; /* Reduce font size for list items */
+    font-size: 0.85rem;
   }
 }
-
-
-
 
 .portfolio {
   text-align: center;
@@ -371,12 +368,11 @@ p {
 
 .pagination .page-item .page-link.active {
   background-color: #1bbd36;
-  gap:2px;
+  gap: 2px;
   color: white;
 }
 
-
-.pagination .page-item .page-link:hover{
+.pagination .page-item .page-link:hover {
   background-color: #55c969;
   color: white;
 }
@@ -419,4 +415,128 @@ p {
   color: #e9ecef;
 }
 
+.services .service-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
 
+.services .service-item .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.services .service-item .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.services .service-item .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.services .service-item .icon svg path {
+  transition: 0.5s;
+  fill: color-mix(in srgb, rgb(139, 135, 135), transparent 95%);
+}
+
+.services .service-item h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item:hover {
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-item.item-cyan i {
+  color: #0dcaf0;
+}
+
+.services .service-item.item-cyan:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-cyan:hover .icon path {
+  fill: #0dcaf0;
+}
+
+.services .service-item.item-orange i {
+  color: #fd7e14;
+}
+
+.services .service-item.item-orange:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-orange:hover .icon path {
+  fill: #fd7e14;
+}
+
+.services .service-item.item-teal i {
+  color: #20c997;
+}
+
+.services .service-item.item-teal:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-teal:hover .icon path {
+  fill: #20c997;
+}
+
+.services .service-item.item-red i {
+  color: #df1529;
+}
+
+.services .service-item.item-red:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-red:hover .icon path {
+  fill: #df1529;
+}
+
+.services .service-item.item-indigo i {
+  color: #6610f2;
+}
+
+.services .service-item.item-indigo:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-indigo:hover .icon path {
+  fill: #6610f2;
+}
+
+.services .service-item.item-pink i {
+  color: #f3268c;
+}
+
+.services .service-item.item-pink:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-pink:hover .icon path {
+  fill: #f3268c;
+}
