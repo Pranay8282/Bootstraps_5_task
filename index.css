@@ -12,10 +12,14 @@
 }
 
 /* NavBar */
+
 .navbar-nav .nav-item .nav-link.active {
-  color: #4caf50;
+  color: #1bbd36;
 }
 
+.navbar-nav .nav-item:hover .nav-link{
+  color: #1bbd36;
+}
 /* Carousel  */
 
 /* General Carousel Styles */
@@ -23,7 +27,7 @@
   object-fit: cover;
   position: relative;
   height: 100%;
-  max-height: 80vh; /* Ensure the images fit well within the viewport */
+  max-height: 80vh; 
 }
 
 /* Carousel Caption */
@@ -240,8 +244,8 @@ p {
   object-fit: cover;
 }
 .our-story-section h2 {
-  width: 350px;
-  padding-bottom: 120px;
+  width:fit-content;
+  padding-bottom: 80px;
 }
 .our-story-section {
   padding: 50px 0;
@@ -283,7 +287,9 @@ p {
   .our-story-section .col-md-6 {
     width: 100%;
     margin-bottom: 20px;
+    align-self: center;
   }
+
 
   .our-story-section .col-md-6 img {
     max-width: 90%;
@@ -296,6 +302,7 @@ p {
   .our-story-section h2 {
     font-size: 1.8rem;
     margin-top: 20px;
+  padding-bottom: 0px;
   }
 
   .our-story-content {
@@ -411,8 +418,21 @@ p {
   border-color: #555;
 }
 
+
+.footer .social-links:hover {
+  border-color: #1bbd36;
+}
+
+
+.footer #footer-effect:hover{
+  color: #1bbd36;
+}
 .footer h3 {
   color: #e9ecef;
+}
+
+footer p:hover a{
+  color: #1bbd36;
 }
 
 .services .service-item {
@@ -539,4 +559,80 @@ p {
 
 .services .service-item.item-pink:hover .icon path {
   fill: #f3268c;
+}
+
+.logo-grid {
+  border: 1px solid #ddd; /* Outer border for the grid */
+}
+.logo-grid-item {
+  border-right: 1px solid #ddd; /* Right border for each item */
+  border-bottom: 1px solid #ddd; /* Bottom border for each item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Set uniform height */
+}
+.logo-grid-item img {
+  max-width: 80%;
+  padding: 50px;
+  transition: 0.3s;
+}
+
+
+@media screen and (max-width :640px) {
+  .logo-grid-item img {
+      max-width: 90%;
+  }
+}
+.logo-grid-item:last-child {
+  border-right: none; /* Remove right border for the last column */
+}
+.logo-grid .row:last-child .logo-grid-item {
+  border-bottom: none; /* Remove bottom border for the last row */
+}
+
+
+/*  */
+
+.logo-grid {
+  border: 1px solid #ddd; /* Optional: Add a border around the entire grid */
+}
+
+.logo-grid-item {
+  border: 1px solid #ddd; /* Add border around each grid item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Uniform height for grid items */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.logo-grid-item img {
+  max-width: 80%; /* Default max width of logos */
+  padding: 10px; /* Padding inside the grid item */
+  transition: transform 0.3s, max-width 0.3s; /* Smooth hover scaling */
+}
+
+/* Hover Effect */
+.logo-grid-item:hover img {
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .logo-grid-item {
+    height: 120px; /* Reduce height on smaller screens */
+  }
+  .logo-grid-item img {
+    max-width: 90%; /* Increase logo width slightly for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-grid-item {
+    height: 100px; /* Further reduce height for extra small screens */
+  }
+  .logo-grid-item img {
+    max-width: 100%; /* Logos take full available width */
+  }
 }
