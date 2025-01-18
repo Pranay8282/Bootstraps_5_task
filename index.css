@@ -362,6 +362,12 @@ p {
   text-align: center;
 }
 
+
+@media screen and (max-width : 768px) {
+  .portfolio .container .row .col-md-4 .mb-4 img{
+    transition: all 0.3s ease-in-out;
+  }
+}
 .section-title {
   text-align: center;
 }
